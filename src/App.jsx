@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Navigate
 } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Universities from "./pages/UniversityPage";
@@ -17,24 +18,10 @@ const App = () => {
         <Sidebar />
         <div className={styles.content_wrapper}>
           <Routes>
-            <Route
-              path="/universities"
-              element={
-                  <Universities />
-              }
-            />
-            <Route
-              path="/schools"
-              element={
-                  <Schools />
-              }
-            />
-            <Route
-              path="/highschools"
-              element={
-                  <HighSchools />
-              }
-            />
+            <Route path="/" element={<Navigate to="/universities" />} />
+            <Route path="/universities" element={<Universities />} />
+            <Route path="/schools" element={<Schools />} />
+            <Route path="/high-schools" element={<HighSchools />} />
           </Routes>
         </div>
       </div>
