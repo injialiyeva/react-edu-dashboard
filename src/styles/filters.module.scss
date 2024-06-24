@@ -1,0 +1,48 @@
+@import "./mixins";
+
+.filters_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+
+
+  .filter_item {
+    margin-right: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      @include font;
+      color: #2e3c7f;
+    }
+  }
+
+  select,
+  input[type="text"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .clear_button {
+    background-color: #fff;
+    color: #4865bb;
+    border: 1px solid #4865bb;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1.8rem;
+    margin-top: auto;
+  }
+
+  .clear_button:hover{
+    background-color: #4865bb;
+    color: #fff;
+  }
+}

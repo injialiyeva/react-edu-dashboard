@@ -1,0 +1,68 @@
+@import "./mixins";
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal_content, .confirm_modal_content {
+  position: relative;
+  background-color: #fff;
+  padding: 4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  p {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.modal_content {
+  width: 100rem;
+  height: 40rem;
+  top: 20%;
+  left: 20%;
+}
+
+.confirm_modal_content {
+  width: 50rem;
+  height: 20rem;
+  top: 30%;
+  left: 35%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .cancel_button {
+    @include button;
+    border: 0.1rem solid #bf3a3a;
+    color: #bf3a3a;
+    &:hover {
+      background-color: #bf3a3a;
+      color: #ffffff;
+    }
+    &:active {
+      color: #ffffff;
+      background-color: #7b2121;
+    }
+  }
+
+  .confirm_button {
+    @include button;
+    background: #4865bb;
+    color: #ffffff;
+    &:hover {
+      background-color: #293673;
+    }
+    &:active {
+      background-color: #253066;
+    }
+  }
+}
