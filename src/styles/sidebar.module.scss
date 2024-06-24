@@ -1,0 +1,36 @@
+@import "./mixins.scss";
+
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #eaecf2;
+  padding: 2rem;
+  min-height: 100vh;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      width: 20rem;
+      font-size: 2.4rem;
+      color: #4865bb;
+      @include flex-center;
+      justify-content: flex-start;
+      padding: 1rem;
+    }
+  }
+}
+
+.menu_items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.active_menu_item {
+  background-color: #eaebf2;
+  border-radius: 6px;
+}

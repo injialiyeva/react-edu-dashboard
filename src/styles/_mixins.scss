@@ -1,0 +1,28 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button {
+  width: 8.9rem;
+  height: 4.7rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  transition: 0.3s;
+}
+
+@mixin font {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+@mixin title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  color: #4865bb;
+}

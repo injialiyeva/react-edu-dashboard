@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #fbfbfc;
+}
+
+.content_wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+}
