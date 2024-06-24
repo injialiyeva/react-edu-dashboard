@@ -1,0 +1,45 @@
+@import "./mixins";
+
+.login_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fbfbfc;
+}
+
+.login_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+  label {
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  input {
+    height: 3.6rem;
+    border: 0.1rem solid #959ca3;
+    border-radius: 0.5rem;
+    padding: 1rem 1.4rem;
+    outline: none;
+  }
+}
+
+.login_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 12.9rem;
+  background: #4865bb;
+  border-radius: 0.8rem;
+  color: #fff;
+  @include font;
+  &:hover {
+    background-color: #293673;
+  }
+  &:active {
+    background-color: #253066;
+  }
+}
